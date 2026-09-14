@@ -254,7 +254,7 @@ export default function ProjectEditor({
 
             <div>
               <label htmlFor="p-long" className="label">
-                To'liqroq tavsif
+                To&apos;liqroq tavsif
               </label>
               <textarea
                 id="p-long"
@@ -347,7 +347,7 @@ export default function ProjectEditor({
                   onChange={(e) => set("featured", e.target.checked)}
                   className="h-4 w-4 accent-brand-500"
                 />
-                Bosh sahifada ajratib ko'rsatish
+                Bosh sahifada ajratib ko&apos;rsatish
               </label>
 
               <label className="glass flex cursor-pointer items-center gap-3 rounded-xl px-4 py-3 text-sm text-slate-200">
@@ -357,7 +357,7 @@ export default function ProjectEditor({
                   onChange={(e) => set("visible", e.target.checked)}
                   className="h-4 w-4 accent-brand-500"
                 />
-                Tashrif buyuruvchilarga ko'rinsin
+                Tashrif buyuruvchilarga ko&apos;rinsin
               </label>
             </div>
 
@@ -384,7 +384,7 @@ export default function ProjectEditor({
                 ) : (
                   <Trash className="h-4 w-4" />
                 )}
-                O'chirish
+                O&apos;chirish
               </button>
             ) : (
               <span />

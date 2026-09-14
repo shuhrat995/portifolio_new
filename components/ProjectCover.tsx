@@ -21,7 +21,7 @@ function hashOf(value: string): number {
 }
 
 function initialsOf(name: string): string {
-  const words = name.split(/[\s—–-]+/).filter((w) => /[a-zA-Z0-9]/.test(w));
+  const words = (name || "Project").split(/[\s—–-]+/).filter(Boolean);
   if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
   return (words[0][0] + words[1][0]).toUpperCase();
 }

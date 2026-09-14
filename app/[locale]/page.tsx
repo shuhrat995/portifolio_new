@@ -10,6 +10,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import { getProfile, getProjects } from "@/lib/data";
 import { getDictionary, isLocale, LOCALES, type Locale } from "@/lib/i18n";
+import { localizeProfile, localizeProjects } from "@/lib/content";
 import { absoluteUrl } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -27,7 +28,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   if (!isLocale(value)) notFound();
   const locale = value as Locale;
   const dictionary = getDictionary(locale);
-  const [profile, projects] = await Promise.all([getProfile(), getProjects()]);
+  const [sourceProfile, sourceProjects] = await Promise.all([getProfile(), getProjects()]);
+  const profile = localizeProfile(sourceProfile, locale);
+  const projects = localizeProjects(sourceProjects, locale);
   const liveCount = projects.filter((p) => p.liveUrl).length;
   const structuredData = {
     "@context": "https://schema.org", "@type": "Person", name: profile.name,

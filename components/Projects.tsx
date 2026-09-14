@@ -14,26 +14,27 @@ export default function Projects({ projects, dictionary }: { projects: Project[]
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState(dictionary.projects.all);
   const [expanded, setExpanded] = useState(false);
+  const allCategory = dictionary.projects.all;
 
   const categories = useMemo(() => {
     const counts = new Map<string, number>();
     for (const project of projects) {
-      const key = project.category || dictionary.projects.all;
+      const key = project.category || allCategory;
       counts.set(key, (counts.get(key) ?? 0) + 1);
     }
     return [
-      { name: dictionary.projects.all, count: projects.length },
+      { name: allCategory, count: projects.length },
       ...[...counts.entries()]
         .sort((a, b) => b[1] - a[1])
         .map(([name, count]) => ({ name, count })),
     ];
-  }, [projects]);
+  }, [allCategory, projects]);
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
 
     return projects.filter((project) => {
-      if (category !== dictionary.projects.all && (project.category || dictionary.projects.all) !== category) {
+      if (category !== allCategory && (project.category || allCategory) !== category) {
         return false;
       }
       if (!needle) return true;
@@ -51,7 +52,7 @@ export default function Projects({ projects, dictionary }: { projects: Project[]
 
       return haystack.includes(needle);
     });
-  }, [projects, category, query]);
+  }, [allCategory, projects, category, query]);
 
   const visible = expanded ? filtered : filtered.slice(0, PAGE_SIZE);
   const liveCount = projects.filter((p) => p.liveUrl).length;
