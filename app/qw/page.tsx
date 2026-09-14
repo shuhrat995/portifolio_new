@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import LoginForm from "@/components/admin/LoginForm";
-import { isAuthenticated, usingDefaultPassword } from "@/lib/auth";
+import { isAuthenticated } from "@/lib/auth";
 
 export const metadata: Metadata = {
   title: "Admin access",
@@ -15,5 +15,5 @@ export default async function AdminLoginPage() {
     redirect("/qw/dashboard");
   }
 
-  return <LoginForm usingDefault={usingDefaultPassword()} />;
+  return <LoginForm />;
 }

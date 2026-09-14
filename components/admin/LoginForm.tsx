@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { Eye, EyeOff, Lock, Shield, Spinner } from "@/components/icons";
 
-export default function LoginForm({ usingDefault }: { usingDefault: boolean }) {
+export default function LoginForm() {
   const router = useRouter();
   const [password, setPassword] = useState("");
   const [reveal, setReveal] = useState(false);
@@ -131,15 +131,6 @@ export default function LoginForm({ usingDefault }: { usingDefault: boolean }) {
             </button>
           </form>
         </div>
-
-        {usingDefault ? (
-          <p className="mt-4 rounded-2xl border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-xs leading-relaxed text-amber-200">
-            <strong className="font-semibold">Security notice:</strong> you are still
-            using the built-in default password. Add{" "}
-            <code className="font-mono">ADMIN_PASSWORD</code> to{" "}
-            <code className="font-mono">.env.local</code> to change it.
-          </p>
-        ) : null}
 
         <p className="mt-6 text-center">
           <Link
