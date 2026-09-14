@@ -1,0 +1,491 @@
+[
+  {
+    "tech": [
+      "Next.js",
+      "Express",
+      "TypeScript",
+      "REST API",
+      "Vercel"
+    ],
+    "topics": [
+      "nextjs",
+      "express",
+      "anime",
+      "fullstack"
+    ],
+    "featured": true,
+    "visible": true,
+    "id": "anime",
+    "slug": "anime",
+    "name": "Anime Platform",
+    "description": "Full-stack anime platform with a Next.js frontend and a dedicated Express API — browse, search and discover titles in a fast, media-rich interface.",
+    "longDescription": "A complete anime discovery product rather than a UI exercise: the Next.js client renders a responsive, image-heavy catalogue while a separate Express backend owns the data layer. Built with care for loading states, empty states and a layout that holds together on small screens.",
+    "repoUrl": "https://github.com/shuhrat995/anime",
+    "liveUrl": "",
+    "language": "TypeScript",
+    "category": "Full-Stack",
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-09-12T15:08:50Z",
+    "image": "",
+    "order": 0
+  },
+  {
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Admin Panel",
+      "Dashboards",
+      "Vercel"
+    ],
+    "topics": [
+      "nextjs",
+      "typescript",
+      "admin-panel",
+      "education"
+    ],
+    "featured": true,
+    "visible": true,
+    "id": "28-maktab_xonqa",
+    "slug": "28-maktab_xonqa",
+    "name": "School Platform — 28-maktab Xonqa",
+    "description": "Modern school web platform for news, internal statistics and graduate data, complete with a protected admin panel for content management.",
+    "longDescription": "A platform built around the everyday needs of a school: announcements, an information hub, statistics dashboards and a granular admin area so staff can publish and manage content without touching code. Currently in production use for the school's public site.",
+    "repoUrl": "https://github.com/shuhrat995/28-maktab_Xonqa",
+    "liveUrl": "https://28-maktab-xonqa.vercel.app",
+    "language": "TypeScript",
+    "category": "Full-Stack",
+    "stars": 1,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-09-11T16:10:59Z",
+    "image": "",
+    "order": 1
+  },
+  {
+    "tech": [
+      "Next.js 16",
+      "TypeScript",
+      "Zustand",
+      "Framer Motion",
+      "Tailwind CSS",
+      "Axios"
+    ],
+    "topics": [
+      "nextjs",
+      "zustand",
+      "framer-motion",
+      "tailwindcss"
+    ],
+    "featured": true,
+    "visible": true,
+    "id": "xonatr",
+    "slug": "xonatr",
+    "name": "XonAtr",
+    "description": "Next.js 16 application with global state via Zustand, animated transitions and a Tailwind CSS design system.",
+    "longDescription": "A modern Next.js 16 / React 19 app that leans on Zustand for global state, Framer Motion for motion design and Axios for data fetching — assembled into a Tailwind v4 design system with lucide icons.",
+    "repoUrl": "https://github.com/shuhrat995/XonAtr",
+    "liveUrl": "https://xonatr.vercel.app",
+    "language": "TypeScript",
+    "category": "Frontend",
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-08-26T21:39:37Z",
+    "image": "",
+    "order": 2
+  },
+  {
+    "tech": [
+      "JavaScript",
+      "REST API",
+      "E-Commerce",
+      "Responsive UI",
+      "Vercel"
+    ],
+    "topics": [
+      "ecommerce",
+      "javascript",
+      "ui-ux"
+    ],
+    "featured": true,
+    "visible": true,
+    "id": "onlayn_savdo",
+    "slug": "onlayn_savdo",
+    "name": "Onlayn Savdo — E-Commerce",
+    "description": "E-commerce storefront focused on UI/UX craft — product listing, cart flow and a clean, reusable component architecture.",
+    "longDescription": "An e-commerce front end built with a modern, fast stack and a deliberate focus on user experience: browsing, product detail and cart flows are wired end to end, with reusable components and clean-code conventions throughout.",
+    "repoUrl": "https://github.com/shuhrat995/Onlayn_savdo",
+    "liveUrl": "https://onlayn-savdo.vercel.app",
+    "language": "JavaScript",
+    "category": "Frontend",
+    "stars": 1,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-06-05T13:02:26Z",
+    "image": "",
+    "order": 3
+  },
+  {
+    "id": "task-management",
+    "slug": "task-management",
+    "name": "TaskFlow — Kanban & Crypto",
+    "description": "Full-stack Kanban task manager on the Next.js App Router, paired with a live crypto market view and a typed internal API layer.",
+    "longDescription": "Two products in one codebase: a Kanban board with draggable columns and a crypto market panel fed by a public API. Next.js route handlers form a typed internal API, and optimistic UI updates keep the board feeling instant even on a slow connection.",
+    "repoUrl": "https://github.com/shuhrat995/task-management",
+    "liveUrl": "https://task-menejer.netlify.app/",
+    "language": "TypeScript",
+    "category": "Full-Stack",
+    "tech": [
+      "Next.js",
+      "App Router",
+      "TypeScript",
+      "Kanban",
+      "CoinGecko API",
+      "Vercel"
+    ],
+    "topics": [
+      "nextjs",
+      "kanban",
+      "crypto",
+      "typescript"
+    ],
+    "stars": 1,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-09-14T16:46:06.660Z",
+    "image": "",
+    "featured": true,
+    "visible": true,
+    "order": 4
+  },
+  {
+    "tech": [
+      "JavaScript",
+      "Weather API",
+      "CSS3",
+      "Responsive",
+      "Vercel"
+    ],
+    "topics": [
+      "javascript",
+      "weather-api",
+      "css"
+    ],
+    "featured": true,
+    "visible": true,
+    "id": "ob_xavo",
+    "slug": "ob_xavo",
+    "name": "Ob-Havo — Weather App",
+    "description": "Live weather application showing current conditions and forecasts from a public weather API, styled with a clean, mobile-first CSS layout.",
+    "longDescription": "A weather app that fetches live conditions for any queried city and renders them in a tidy, mobile-first card layout — a compact exercise in API integration, async state and resilient loading/error handling.",
+    "repoUrl": "https://github.com/shuhrat995/ob_xavo",
+    "liveUrl": "https://ob-xavo.vercel.app",
+    "language": "CSS",
+    "category": "Frontend",
+    "stars": 1,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-05-27T15:00:13Z",
+    "image": "",
+    "order": 5
+  },
+  {
+    "id": "lugat",
+    "slug": "lugat",
+    "name": "LexoraUz — Vocabulary App",
+    "description": "LingoUz — a 14,000+ word vocabulary app built with React and shipped to Android through Capacitor.",
+    "longDescription": "A dictionary and vocabulary trainer with a 14,000+ word dataset (roadmap: 80,000). Built with React 19, React Router and Vite, then wrapped with Capacitor so the exact same codebase runs as a native Android app as well as on the web.",
+    "repoUrl": "https://github.com/shuhrat995/Lugat",
+    "liveUrl": "https://lugat-80k.netlify.app/",
+    "language": "JavaScript",
+    "category": "Mobile",
+    "tech": [
+      "React 19",
+      "Vite",
+      "Capacitor",
+      "Android",
+      "React Router",
+      "GitHub Pages"
+    ],
+    "topics": [
+      "react",
+      "capacitor",
+      "android",
+      "dictionary"
+    ],
+    "stars": 2,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-09-14T16:48:37.323Z",
+    "image": "",
+    "featured": true,
+    "visible": true,
+    "order": 6
+  },
+  {
+    "tech": [
+      "JavaScript",
+      "HTML5 Canvas",
+      "CSS3",
+      "Game Loop"
+    ],
+    "topics": [
+      "javascript",
+      "canvas",
+      "game"
+    ],
+    "featured": false,
+    "visible": true,
+    "id": "2d_o-yin_ish_uchun",
+    "slug": "2d_o-yin_ish_uchun",
+    "name": "Arkanoid — NES Edition",
+    "description": "Arkanoid clone rendered on HTML5 Canvas — brick physics, paddle control and NES-inspired pixel visuals in pure vanilla JavaScript.",
+    "longDescription": "A browser game written from scratch with no engine and no dependencies: a requestAnimationFrame loop drives ball physics and collision detection on HTML5 Canvas, with a retro NES palette applied throughout.",
+    "repoUrl": "https://github.com/shuhrat995/2D_O-yin_ish_uchun",
+    "liveUrl": "https://2-d-oyin-ish-uchun.vercel.app",
+    "language": "JavaScript",
+    "category": "Game",
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-08-31T15:31:56Z",
+    "image": "",
+    "order": 7
+  },
+  {
+    "tech": [
+      "React",
+      "Vite",
+      "ESLint",
+      "HMR"
+    ],
+    "topics": [
+      "react",
+      "learning"
+    ],
+    "featured": false,
+    "visible": true,
+    "id": "react_new_app",
+    "slug": "react_new_app",
+    "name": "React Scratch App",
+    "description": "Early React scratch project that marked the move from plain JavaScript into component-based development.",
+    "longDescription": "",
+    "repoUrl": "https://github.com/shuhrat995/react_new_app",
+    "liveUrl": "",
+    "language": "JavaScript",
+    "category": "Mini App",
+    "stars": 2,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-04-05T14:06:01Z",
+    "image": "",
+    "order": 8
+  },
+  {
+    "tech": [
+      "React",
+      "Vite",
+      "Capacitor",
+      "Android",
+      "Exchange Rate API",
+      "Vercel"
+    ],
+    "topics": [
+      "react",
+      "capacitor",
+      "currency"
+    ],
+    "featured": false,
+    "visible": true,
+    "id": "valyutalar_kanverdi",
+    "slug": "valyutalar_kanverdi",
+    "name": "Valyuta Kursi — Currency Converter",
+    "description": "Currency converter with live exchange rates, packaged as an installable Android app with Capacitor.",
+    "longDescription": "A focused utility: pick two currencies, get a live rate and an instant conversion. Built with React and Vite, then shipped to Android with Capacitor so it installs and runs like a native app.",
+    "repoUrl": "https://github.com/shuhrat995/Valyutalar_kanverdi",
+    "liveUrl": "https://valyuta-kursi-lyart.vercel.app",
+    "language": "CSS",
+    "category": "Mobile",
+    "stars": 2,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-03-31T16:27:00Z",
+    "image": "",
+    "order": 9
+  },
+  {
+    "tech": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Neon UI"
+    ],
+    "topics": [
+      "html",
+      "css",
+      "portfolio"
+    ],
+    "featured": false,
+    "visible": true,
+    "id": "portifolio",
+    "slug": "portifolio",
+    "name": "Neon Portfolio",
+    "description": "Neon-styled personal portfolio built with hand-written HTML, CSS and vanilla JavaScript — the project that started this one.",
+    "longDescription": "The original portfolio: no framework, no build step, just carefully hand-written HTML, CSS and JavaScript with a glow-heavy neon aesthetic. A useful baseline for how much the Next.js version gained.",
+    "repoUrl": "https://github.com/shuhrat995/portifolio",
+    "liveUrl": "https://shuhrat995.github.io/portifolio/",
+    "language": "HTML",
+    "category": "Frontend",
+    "stars": 3,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-03-25T12:43:30Z",
+    "image": "",
+    "order": 10
+  },
+  {
+    "tech": [
+      "React",
+      "Hooks",
+      "CRUD"
+    ],
+    "topics": [
+      "react",
+      "crud"
+    ],
+    "featured": false,
+    "visible": true,
+    "id": "react_todos",
+    "slug": "react_todos",
+    "name": "React Todos",
+    "description": "Todo application covering the full CRUD cycle with React hooks and local persistence.",
+    "longDescription": "",
+    "repoUrl": "https://github.com/shuhrat995/React_todos",
+    "liveUrl": "",
+    "language": "JavaScript",
+    "category": "Mini App",
+    "stars": 3,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-03-23T07:36:04Z",
+    "image": "",
+    "order": 11
+  },
+  {
+    "tech": [
+      "React",
+      "Vite",
+      "CSS",
+      "Component State"
+    ],
+    "topics": [
+      "react",
+      "vite"
+    ],
+    "featured": false,
+    "visible": true,
+    "id": "react_info_generator",
+    "slug": "react_info_generator",
+    "name": "React Info Generator",
+    "description": "Small React app that surfaces 20 useful facts about React, demonstrating component state and conditional rendering.",
+    "longDescription": "",
+    "repoUrl": "https://github.com/shuhrat995/React_Info_Generator",
+    "liveUrl": "",
+    "language": "CSS",
+    "category": "Mini App",
+    "stars": 2,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-03-21T05:58:13Z",
+    "image": "",
+    "order": 12
+  },
+  {
+    "tech": [
+      "React",
+      "Vite",
+      "State Management"
+    ],
+    "topics": [
+      "react",
+      "quiz"
+    ],
+    "featured": false,
+    "visible": true,
+    "id": "react_savollar_javoblar",
+    "slug": "react_savollar_javoblar",
+    "name": "Quiz — Questions & Answers",
+    "description": "Question and answer quiz app with instant answer feedback and score tracking.",
+    "longDescription": "",
+    "repoUrl": "https://github.com/shuhrat995/React_savollar_javoblar",
+    "liveUrl": "",
+    "language": "JavaScript",
+    "category": "Mini App",
+    "stars": 2,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-03-21T05:29:33Z",
+    "image": "",
+    "order": 13
+  },
+  {
+    "tech": [
+      "React",
+      "Vite",
+      "useEffect",
+      "Hooks"
+    ],
+    "topics": [
+      "react",
+      "timer"
+    ],
+    "featured": false,
+    "visible": true,
+    "id": "timer",
+    "slug": "timer",
+    "name": "Countdown Timer",
+    "description": "Countdown timer with start, pause and reset controls, built on React hooks and effects.",
+    "longDescription": "",
+    "repoUrl": "https://github.com/shuhrat995/Timer",
+    "liveUrl": "",
+    "language": "JavaScript",
+    "category": "Mini App",
+    "stars": 2,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-03-21T04:15:46Z",
+    "image": "",
+    "order": 14
+  },
+  {
+    "tech": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "DOM"
+    ],
+    "topics": [
+      "javascript",
+      "calculator"
+    ],
+    "featured": false,
+    "visible": true,
+    "id": "javascript-qalqulyatr",
+    "slug": "javascript-qalqulyatr",
+    "name": "JavaScript Calculator",
+    "description": "Calculator that accepts both mouse and keyboard input, written in vanilla JavaScript with DOM-driven state.",
+    "longDescription": "A no-framework calculator: expression parsing, operator precedence and keyboard event handling implemented by hand on top of the DOM. A compact demonstration of core JavaScript.",
+    "repoUrl": "https://github.com/shuhrat995/JavaScript-qalqulyatr",
+    "liveUrl": "https://shuhrat995.github.io/JavaScript-qalqulyatr/",
+    "language": "CSS",
+    "category": "Mini App",
+    "stars": 3,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2025-10-24T16:40:00Z",
+    "image": "",
+    "order": 15
+  }
+]

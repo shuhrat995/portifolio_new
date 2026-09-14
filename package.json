@@ -1,12 +1,16 @@
 {
-  "name": "scaffoldtmp",
-  "version": "0.1.0",
+  "name": "shuhrat-portfolio",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "sync": "node scripts/sync-github.mjs",
+    "curate": "node scripts/curate.mjs",
+    "check-links": "node scripts/check-links.mjs"
   },
   "dependencies": {
     "next": "16.3.5",

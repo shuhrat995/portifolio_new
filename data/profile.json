@@ -1,0 +1,176 @@
+{
+  "name": "Shuhrat Madaminov",
+  "username": "shuhrat995",
+  "headline": "Frontend Developer building fast, modern web apps",
+  "location": "Khorezm, Uzbekistan",
+  "company": "Xonqa IT Park — Student (2024–2026)",
+  "avatarUrl": "/my-photo.jpg",
+  "github": "https://github.com/shuhrat995",
+  "blog": "https://www.linkedin.com/in/shuhrat-madaminov-a50161348/",
+  "email": "",
+  "telegram": "https://t.me/Junior_dasturchi",
+  "linkedin": "https://www.linkedin.com/in/shuhrat-madaminov-a50161348/",
+  "twitter": "",
+  "resumeUrl": "",
+  "stats": {
+    "followers": 6,
+    "following": 12,
+    "publicRepos": 18,
+    "stars": 30,
+    "liveDemos": 8,
+    "languages": [
+      {
+        "name": "JavaScript",
+        "count": 8
+      },
+      {
+        "name": "TypeScript",
+        "count": 4
+      },
+      {
+        "name": "CSS",
+        "count": 4
+      },
+      {
+        "name": "HTML",
+        "count": 1
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "HTML5",
+      "category": "Core",
+      "level": 95
+    },
+    {
+      "name": "CSS3",
+      "category": "Core",
+      "level": 93
+    },
+    {
+      "name": "JavaScript (ES6+)",
+      "category": "Core",
+      "level": 90
+    },
+    {
+      "name": "TypeScript",
+      "category": "Core",
+      "level": 78
+    },
+    {
+      "name": "React.js",
+      "category": "Framework",
+      "level": 88
+    },
+    {
+      "name": "Next.js",
+      "category": "Framework",
+      "level": 80
+    },
+    {
+      "name": "React Router",
+      "category": "Framework",
+      "level": 82
+    },
+    {
+      "name": "Zustand",
+      "category": "Framework",
+      "level": 70
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "Styling",
+      "level": 85
+    },
+    {
+      "name": "Responsive / Mobile-first",
+      "category": "Styling",
+      "level": 92
+    },
+    {
+      "name": "Framer Motion",
+      "category": "Styling",
+      "level": 72
+    },
+    {
+      "name": "REST API integration",
+      "category": "Tooling",
+      "level": 84
+    },
+    {
+      "name": "Git & GitHub",
+      "category": "Tooling",
+      "level": 86
+    },
+    {
+      "name": "Vite",
+      "category": "Tooling",
+      "level": 85
+    },
+    {
+      "name": "Capacitor (Android)",
+      "category": "Tooling",
+      "level": 74
+    },
+    {
+      "name": "Figma → code",
+      "category": "Tooling",
+      "level": 88
+    },
+    {
+      "name": "Vercel deployment",
+      "category": "Tooling",
+      "level": 88
+    }
+  ],
+  "experience": [
+    {
+      "role": "Frontend Developer",
+      "company": "Freelance & Team Projects",
+      "period": "2024 — Present",
+      "location": "Khorezm, Uzbekistan",
+      "highlights": [
+        "Built and deployed a school platform with a content admin panel, now used for the school's public site.",
+        "Shipped an e-commerce storefront and a full-stack Kanban task manager on the Next.js App Router.",
+        "Worked in a team of two frontend and one backend developer, integrating against a shared API contract."
+      ]
+    },
+    {
+      "role": "Frontend Development Student",
+      "company": "Xonqa IT Park",
+      "period": "2024 — 2026",
+      "location": "Xonqa, Uzbekistan",
+      "highlights": [
+        "Two-year practical programme covering HTML, CSS, JavaScript, React and modern tooling.",
+        "Reached a Junior+ level of hands-on project experience alongside coursework."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Frontend Development",
+      "school": "Xonqa IT Park",
+      "period": "2024 — 2026",
+      "location": "Xonqa, Khorezm, Uzbekistan"
+    }
+  ],
+  "updatedAt": "2026-09-14T16:29:21.633Z",
+  "roles": [
+    "Frontend Developer",
+    "React & Next.js Developer",
+    "TypeScript Enthusiast",
+    "Mobile-first UI Builder"
+  ],
+  "bio": [
+    "I'm Shuhrat Madaminov, a frontend developer based in Khorezm, Uzbekistan. I started with plain HTML, CSS and JavaScript and now build full applications with React, Next.js and TypeScript.",
+    "I'm currently a student at Xonqa IT Park (2024–2026) and work at a Junior+ level with about two years of hands-on practice. I've shipped projects in a professional team of two frontend and one backend developer, which is where I learned to work against an API contract instead of in isolation.",
+    "My focus is the React ecosystem and mobile-first design. I care about turning Figma designs into pixel-perfect, accessible interfaces, and I keep coming back to three things: a clean component architecture, honest loading and error states, and code that the next person can read."
+  ],
+  "quote": "Har bir kichik qadam katta maqsadga olib boradi.",
+  "quoteTranslation": "Every small step leads to a big goal.",
+  "interests": [
+    "Keeping focus with music — Konsta and soft piano while coding.",
+    "Trying out a new technology every day, even if it's just for an afternoon."
+  ]
+}
