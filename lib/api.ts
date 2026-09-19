@@ -15,9 +15,11 @@ export function errorResponse(error: unknown) {
   if (error instanceof Unauthorized) {
     return NextResponse.json({ error: "Not signed in." }, { status: 401 });
   }
-  const message = error instanceof Error ? error.message : "Unexpected error";
   console.error("[admin api]", error);
-  return NextResponse.json({ error: message }, { status: 500 });
+  return NextResponse.json(
+    { error: "Something went wrong. Please try again later." },
+    { status: 500 }
+  );
 }
 
 /** Makes the public pages pick up freshly written data. */

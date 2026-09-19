@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import AdminDashboard from "@/components/admin/AdminDashboard";
 import { getProfile, getProjects } from "@/lib/data";
-import { isAuthenticated, usingDefaultPassword } from "@/lib/auth";
+import { isAuthenticated } from "@/lib/auth";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -22,12 +22,6 @@ export default async function AdminDashboardPage() {
     <AdminDashboard
       initialProfile={profile}
       initialProjects={projects}
-      usingDefaultPassword={usingDefaultPassword()}
-      storageMode={
-        process.env.GITHUB_TOKEN && process.env.GITHUB_DATA_REPO
-          ? "github"
-          : "filesystem"
-      }
     />
   );
 }

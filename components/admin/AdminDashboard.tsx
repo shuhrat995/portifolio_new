@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMemo, useState, type ReactNode } from "react";
-import type { Profile, Project, SaveMode } from "@/lib/types";
+import type { Profile, Project } from "@/lib/types";
 import ProjectEditor from "./ProjectEditor";
 import ProfileEditor from "./ProfileEditor";
 import {
@@ -26,8 +26,6 @@ import {
 type Props = {
   initialProfile: Profile;
   initialProjects: Project[];
-  usingDefaultPassword: boolean;
-  storageMode: SaveMode;
 };
 
 type Toast = { message: string; tone: "ok" | "warn" };
@@ -48,8 +46,6 @@ function thumbClass(slug: string): string {
 export default function AdminDashboard({
   initialProfile,
   initialProjects,
-  usingDefaultPassword,
-  storageMode,
 }: Props) {
   const router = useRouter();
 
@@ -94,7 +90,7 @@ export default function AdminDashboard({
 
   /* ---------------- Project actions ---------------- */
 
-  function onSaved(project: Project, mode: SaveMode) {
+  function onSaved(project: Project) {
     setProjects((prev) => {
       const index = prev.findIndex((p) => p.slug === project.slug);
       if (index === -1) return [project, ...prev];
@@ -103,11 +99,7 @@ export default function AdminDashboard({
       return next;
     });
     setEditing(undefined);
-    flash(
-      mode === "github"
-        ? "Saved — committed to GitHub. Vercel will redeploy shortly."
-        : "Saved to data/projects.json"
-    );
+    flash("Saved successfully.");
     router.refresh();
   }
 
@@ -198,15 +190,6 @@ export default function AdminDashboard({
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="chip hidden sm:inline-flex">
-              <span
-                className={`h-1.5 w-1.5 rounded-full ${
-                  storageMode === "github" ? "bg-mint-400" : "bg-amber-400"
-                }`}
-              />
-              {storageMode === "github" ? "GitHub commits" : "Local files"}
-            </span>
-
             <a
               href="/"
               target="_blank"
@@ -235,16 +218,6 @@ export default function AdminDashboard({
       </header>
 
       <main className="container-x py-8">
-        {usingDefaultPassword ? (
-          <div className="mb-6 rounded-2xl border border-amber-500/30 bg-amber-500/10 px-5 py-4 text-sm text-amber-200">
-            <strong className="font-semibold">Change your password.</strong> You are
-            using the built-in default. Set{" "}
-            <code className="font-mono">ADMIN_PASSWORD</code> in{" "}
-            <code className="font-mono">.env.local</code> (and in your host&apos;s
-            environment variables) to lock this panel down.
-          </div>
-        ) : null}
-
         {/* ------------------------- Tabs ------------------------- */}
         <div className="glass mb-6 inline-flex rounded-2xl p-1.5">
           {(["projects", "profile"] as const).map((key) => (
@@ -426,31 +399,14 @@ export default function AdminDashboard({
               ) : null}
             </ul>
 
-            <p className="text-xs text-slate-500">
-              Order here is the order visitors see.{" "}
-              {storageMode === "filesystem" ? (
-                <>
-                  Changes are written to{" "}
-                  <code className="font-mono text-slate-400">data/projects.json</code> —
-                  commit and push to publish them.
-                </>
-              ) : (
-                <>
-                  Changes are committed to GitHub and Vercel redeploys automatically.
-                </>
-              )}
-            </p>
+            <p className="text-xs text-slate-500">Order here is the order visitors see.</p>
           </div>
         ) : (
           <ProfileEditor
             profile={profile}
-            onSaved={(updated, mode) => {
+              onSaved={(updated) => {
               setProfile(updated);
-              flash(
-                mode === "github"
-                  ? "Profile committed to GitHub — redeploying."
-                  : "Profile saved to data/profile.json"
-              );
+                flash("Saved successfully.");
               router.refresh();
             }}
           />
