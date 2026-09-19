@@ -81,6 +81,12 @@ async function persist(fileName: string, contents: string): Promise<SaveMode> {
     return "github";
   }
 
+  if (process.env.VERCEL) {
+    throw new Error(
+      "Content storage is not configured for this deployment. Set GITHUB_TOKEN and GITHUB_DATA_REPO in Vercel Environment Variables."
+    );
+  }
+
   await mkdir(DATA_DIR, { recursive: true });
   await writeFile(path.join(DATA_DIR, fileName), contents, "utf8");
   return "filesystem";
