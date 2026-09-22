@@ -1,5 +1,30 @@
 [
   {
+    "id": "interyu-uz",
+    "slug": "interyu-uz",
+    "name": "Interyu.uz",
+    "description": "sldfjvjsdfvpi",
+    "longDescription": "adfljgvhn dlfjhv hjldf",
+    "repoUrl": "https://github.com/shuhrat995/interyu",
+    "liveUrl": "https://interyuuz.vercel.app/",
+    "language": "TypeScript",
+    "category": "Frontend",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "topics": [],
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2026-09-22T18:27:47.946Z",
+    "updatedAt": "2026-09-22T18:27:53.403Z",
+    "image": "",
+    "featured": true,
+    "visible": true,
+    "order": 0
+  },
+  {
     "tech": [
       "React 19",
       "Vite",
@@ -30,7 +55,7 @@
     "createdAt": "",
     "updatedAt": "2026-09-14T16:48:37.323Z",
     "image": "",
-    "order": 0
+    "order": 1
   },
   {
     "tech": [
@@ -63,7 +88,7 @@
     "createdAt": "",
     "updatedAt": "2026-09-14T16:46:06.660Z",
     "image": "",
-    "order": 1
+    "order": 2
   },
   {
     "tech": [
@@ -95,7 +120,7 @@
     "createdAt": "",
     "updatedAt": "2026-09-12T15:08:50Z",
     "image": "",
-    "order": 2
+    "order": 3
   },
   {
     "tech": [
@@ -127,7 +152,7 @@
     "createdAt": "",
     "updatedAt": "2026-09-11T16:10:59Z",
     "image": "",
-    "order": 3
+    "order": 4
   },
   {
     "tech": [
@@ -160,7 +185,7 @@
     "createdAt": "",
     "updatedAt": "2026-08-26T21:39:37Z",
     "image": "",
-    "order": 4
+    "order": 5
   },
   {
     "tech": [
@@ -191,7 +216,7 @@
     "createdAt": "",
     "updatedAt": "2026-06-05T13:02:26Z",
     "image": "",
-    "order": 5
+    "order": 6
   },
   {
     "tech": [
@@ -222,7 +247,7 @@
     "createdAt": "",
     "updatedAt": "2026-05-27T15:00:13Z",
     "image": "",
-    "order": 6
+    "order": 7
   },
   {
     "tech": [
@@ -252,7 +277,7 @@
     "createdAt": "",
     "updatedAt": "2026-08-31T15:31:56Z",
     "image": "",
-    "order": 7
+    "order": 8
   },
   {
     "tech": [
@@ -281,7 +306,7 @@
     "createdAt": "",
     "updatedAt": "2026-04-05T14:06:01Z",
     "image": "",
-    "order": 8
+    "order": 9
   },
   {
     "tech": [
@@ -313,7 +338,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-31T16:27:00Z",
     "image": "",
-    "order": 9
+    "order": 10
   },
   {
     "tech": [
@@ -343,7 +368,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-25T12:43:30Z",
     "image": "",
-    "order": 10
+    "order": 11
   },
   {
     "tech": [
@@ -371,7 +396,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-23T07:36:04Z",
     "image": "",
-    "order": 11
+    "order": 12
   },
   {
     "tech": [
@@ -400,7 +425,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T05:58:13Z",
     "image": "",
-    "order": 12
+    "order": 13
   },
   {
     "tech": [
@@ -428,7 +453,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T05:29:33Z",
     "image": "",
-    "order": 13
+    "order": 14
   },
   {
     "tech": [
@@ -457,7 +482,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T04:15:46Z",
     "image": "",
-    "order": 14
+    "order": 15
   },
   {
     "tech": [
@@ -486,6 +511,6 @@
     "createdAt": "",
     "updatedAt": "2025-10-24T16:40:00Z",
     "image": "",
-    "order": 15
+    "order": 16
   }
 ]
