@@ -1,6 +1,72 @@
 [
   {
     "tech": [
+      "React 19",
+      "Vite",
+      "Capacitor",
+      "Android",
+      "React Router",
+      "GitHub Pages"
+    ],
+    "topics": [
+      "react",
+      "capacitor",
+      "android",
+      "dictionary"
+    ],
+    "featured": true,
+    "visible": true,
+    "id": "lugat",
+    "slug": "lugat",
+    "name": "LingoUz — Vocabulary App",
+    "description": "LingoUz — a 14,000+ word vocabulary app built with React and shipped to Android through Capacitor.",
+    "longDescription": "A dictionary and vocabulary trainer with a 14,000+ word dataset (roadmap: 80,000). Built with React 19, React Router and Vite, then wrapped with Capacitor so the exact same codebase runs as a native Android app as well as on the web.",
+    "repoUrl": "https://github.com/shuhrat995/Lugat",
+    "liveUrl": "https://shuhrat995.github.io/Lugat/",
+    "language": "JavaScript",
+    "category": "Mobile",
+    "stars": 2,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-09-14T16:48:37.323Z",
+    "image": "",
+    "order": 0
+  },
+  {
+    "tech": [
+      "Next.js",
+      "App Router",
+      "TypeScript",
+      "Kanban",
+      "CoinGecko API",
+      "Vercel"
+    ],
+    "topics": [
+      "nextjs",
+      "kanban",
+      "crypto",
+      "typescript"
+    ],
+    "featured": true,
+    "visible": true,
+    "id": "task-management",
+    "slug": "task-management",
+    "name": "TaskFlow — Kanban & Crypto",
+    "description": "Full-stack Kanban task manager on the Next.js App Router, paired with a live crypto market view and a typed internal API layer.",
+    "longDescription": "Two products in one codebase: a Kanban board with draggable columns and a crypto market panel fed by a public API. Next.js route handlers form a typed internal API, and optimistic UI updates keep the board feeling instant even on a slow connection.",
+    "repoUrl": "https://github.com/shuhrat995/task-management",
+    "liveUrl": "https://task-management-tau-rust.vercel.app",
+    "language": "TypeScript",
+    "category": "Full-Stack",
+    "stars": 1,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-09-14T16:46:06.660Z",
+    "image": "",
+    "order": 1
+  },
+  {
+    "tech": [
       "Next.js",
       "Express",
       "TypeScript",
@@ -29,7 +95,7 @@
     "createdAt": "",
     "updatedAt": "2026-09-12T15:08:50Z",
     "image": "",
-    "order": 0
+    "order": 2
   },
   {
     "tech": [
@@ -61,7 +127,7 @@
     "createdAt": "",
     "updatedAt": "2026-09-11T16:10:59Z",
     "image": "",
-    "order": 1
+    "order": 3
   },
   {
     "tech": [
@@ -94,7 +160,7 @@
     "createdAt": "",
     "updatedAt": "2026-08-26T21:39:37Z",
     "image": "",
-    "order": 2
+    "order": 4
   },
   {
     "tech": [
@@ -125,40 +191,7 @@
     "createdAt": "",
     "updatedAt": "2026-06-05T13:02:26Z",
     "image": "",
-    "order": 3
-  },
-  {
-    "id": "task-management",
-    "slug": "task-management",
-    "name": "TaskFlow — Kanban & Crypto",
-    "description": "Full-stack Kanban task manager on the Next.js App Router, paired with a live crypto market view and a typed internal API layer.",
-    "longDescription": "Two products in one codebase: a Kanban board with draggable columns and a crypto market panel fed by a public API. Next.js route handlers form a typed internal API, and optimistic UI updates keep the board feeling instant even on a slow connection.",
-    "repoUrl": "https://github.com/shuhrat995/task-management",
-    "liveUrl": "https://task-menejer.netlify.app/",
-    "language": "TypeScript",
-    "category": "Full-Stack",
-    "tech": [
-      "Next.js",
-      "App Router",
-      "TypeScript",
-      "Kanban",
-      "CoinGecko API",
-      "Vercel"
-    ],
-    "topics": [
-      "nextjs",
-      "kanban",
-      "crypto",
-      "typescript"
-    ],
-    "stars": 1,
-    "forks": 0,
-    "createdAt": "",
-    "updatedAt": "2026-09-14T16:46:06.660Z",
-    "image": "",
-    "featured": true,
-    "visible": true,
-    "order": 4
+    "order": 5
   },
   {
     "tech": [
@@ -189,39 +222,6 @@
     "createdAt": "",
     "updatedAt": "2026-05-27T15:00:13Z",
     "image": "",
-    "order": 5
-  },
-  {
-    "id": "lugat",
-    "slug": "lugat",
-    "name": "LexoraUz — Vocabulary App",
-    "description": "LingoUz — a 14,000+ word vocabulary app built with React and shipped to Android through Capacitor.",
-    "longDescription": "A dictionary and vocabulary trainer with a 14,000+ word dataset (roadmap: 80,000). Built with React 19, React Router and Vite, then wrapped with Capacitor so the exact same codebase runs as a native Android app as well as on the web.",
-    "repoUrl": "https://github.com/shuhrat995/Lugat",
-    "liveUrl": "https://lugat-80k.netlify.app/",
-    "language": "JavaScript",
-    "category": "Mobile",
-    "tech": [
-      "React 19",
-      "Vite",
-      "Capacitor",
-      "Android",
-      "React Router",
-      "GitHub Pages"
-    ],
-    "topics": [
-      "react",
-      "capacitor",
-      "android",
-      "dictionary"
-    ],
-    "stars": 2,
-    "forks": 0,
-    "createdAt": "",
-    "updatedAt": "2026-09-14T16:48:37.323Z",
-    "image": "",
-    "featured": true,
-    "visible": true,
     "order": 6
   },
   {

@@ -79,7 +79,7 @@ export default function ProjectEditor({
     if (saving) return;
 
     if (!form.name.trim()) {
-      setError("Loyiha nomi kiritilishi shart.");
+      setError("Project name is required.");
       return;
     }
 
@@ -118,21 +118,21 @@ export default function ProjectEditor({
       };
 
       if (!res.ok || !data.project) {
-        setError(data.error || "Loyihani saqlab bo'lmadi.");
+        setError(data.error || "Could not save the project.");
         setSaving(false);
         return;
       }
 
       onSaved(data.project, data.mode ?? "filesystem");
     } catch {
-      setError("Tarmoq xatosi. Qaytadan urinib ko'ring.");
+      setError("Network error. Please try again.");
       setSaving(false);
     }
   }
 
   async function onDelete() {
     if (!project || deleting) return;
-    if (!window.confirm(`“${project.name}” loyihasi o'chirilsinmi? Buni bekor qilib bo'lmaydi.`)) return;
+    if (!window.confirm(`Delete "${project.name}"? This cannot be undone.`)) return;
 
     setDeleting(true);
     setError("");
@@ -144,14 +144,14 @@ export default function ProjectEditor({
 
       if (!res.ok) {
         const data = (await res.json().catch(() => ({}))) as { error?: string };
-        setError(data.error || "Loyihani o'chirib bo'lmadi.");
+        setError(data.error || "Could not delete the project.");
         setDeleting(false);
         return;
       }
 
       onDeleted(project.slug);
     } catch {
-      setError("Tarmoq xatosi. Qaytadan urinib ko'ring.");
+      setError("Network error. Please try again.");
       setDeleting(false);
     }
   }
@@ -161,7 +161,7 @@ export default function ProjectEditor({
       className="fixed inset-0 z-[60] overflow-y-auto bg-ink-950/85 p-3 backdrop-blur-sm sm:p-6"
       role="dialog"
       aria-modal="true"
-      aria-label={isNew ? "Yangi loyiha" : `${project!.name} loyihasini tahrirlash`}
+      aria-label={isNew ? "New project" : `Edit ${project!.name}`}
     >
       <div className="mx-auto my-2 w-full max-w-2xl animate-pop">
         <form
@@ -171,18 +171,18 @@ export default function ProjectEditor({
           <header className="flex items-center justify-between gap-4 border-b border-white/8 px-5 py-4">
             <div>
               <h2 className="text-base font-semibold text-white">
-                {isNew ? "Yangi loyiha" : "Loyihani tahrirlash"}
+                {isNew ? "New project" : "Edit project"}
               </h2>
               <p className="mt-0.5 text-xs text-slate-500">
                 {isNew
-                  ? "Ma'lumotlarni to'ldiring — faqat nom kiritilishi shart."
+                  ? "Fill in the details — only the name is required."
                   : project!.slug}
               </p>
             </div>
             <button
               type="button"
               onClick={onClose}
-              aria-label="Yopish"
+              aria-label="Close"
               className="grid h-9 w-9 place-items-center rounded-xl text-slate-400 transition-colors hover:bg-white/10 hover:text-white"
             >
               <Close className="h-4 w-4" />
@@ -193,7 +193,7 @@ export default function ProjectEditor({
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="sm:col-span-2">
                 <label htmlFor="p-name" className="label">
-                  Nomi *
+                  Name *
                 </label>
                 <input
                   id="p-name"
@@ -207,7 +207,7 @@ export default function ProjectEditor({
 
               <div>
                 <label htmlFor="p-category" className="label">
-                  Kategoriya
+                  Category
                 </label>
                 <input
                   id="p-category"
@@ -226,7 +226,7 @@ export default function ProjectEditor({
 
               <div>
                 <label htmlFor="p-language" className="label">
-                  Asosiy dasturlash tili
+                  Primary language
                 </label>
                 <input
                   id="p-language"
@@ -240,7 +240,7 @@ export default function ProjectEditor({
 
             <div>
               <label htmlFor="p-description" className="label">
-                Karta tavsifi
+                Card description
               </label>
               <textarea
                 id="p-description"
@@ -254,7 +254,7 @@ export default function ProjectEditor({
 
             <div>
               <label htmlFor="p-long" className="label">
-                To&apos;liqroq tavsif
+                Detailed description
               </label>
               <textarea
                 id="p-long"
@@ -268,7 +268,7 @@ export default function ProjectEditor({
 
             <div>
               <label htmlFor="p-tech" className="label">
-                Texnologiyalar — vergul bilan ajrating
+                Technologies — comma separated
               </label>
               <input
                 id="p-tech"
@@ -282,7 +282,7 @@ export default function ProjectEditor({
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
                 <label htmlFor="p-repo" className="label">
-                  GitHub manzili
+                  GitHub URL
                 </label>
                 <input
                   id="p-repo"
@@ -296,7 +296,7 @@ export default function ProjectEditor({
 
               <div>
                 <label htmlFor="p-live" className="label">
-                  Jonli demo manzili
+                  Live demo URL
                 </label>
                 <input
                   id="p-live"
@@ -312,7 +312,7 @@ export default function ProjectEditor({
             <div className="grid gap-4 sm:grid-cols-[1fr_7rem]">
               <div>
                 <label htmlFor="p-image" className="label">
-                  Skrinshot manzili (ixtiyoriy)
+                  Screenshot URL (optional)
                 </label>
                 <input
                   id="p-image"
@@ -326,7 +326,7 @@ export default function ProjectEditor({
 
               <div>
                 <label htmlFor="p-stars" className="label">
-                  Yulduzlar
+                  Stars
                 </label>
                 <input
                   id="p-stars"
@@ -347,7 +347,7 @@ export default function ProjectEditor({
                   onChange={(e) => set("featured", e.target.checked)}
                   className="h-4 w-4 accent-brand-500"
                 />
-                Bosh sahifada ajratib ko&apos;rsatish
+                Feature on homepage
               </label>
 
               <label className="glass flex cursor-pointer items-center gap-3 rounded-xl px-4 py-3 text-sm text-slate-200">
@@ -357,7 +357,7 @@ export default function ProjectEditor({
                   onChange={(e) => set("visible", e.target.checked)}
                   className="h-4 w-4 accent-brand-500"
                 />
-                Tashrif buyuruvchilarga ko&apos;rinsin
+                Visible to visitors
               </label>
             </div>
 
@@ -384,7 +384,7 @@ export default function ProjectEditor({
                 ) : (
                   <Trash className="h-4 w-4" />
                 )}
-                O&apos;chirish
+                Delete
               </button>
             ) : (
               <span />
@@ -396,7 +396,7 @@ export default function ProjectEditor({
                 onClick={onClose}
                 className="btn btn-ghost !px-4 !py-2 !text-[0.8125rem]"
               >
-                Bekor qilish
+                Cancel
               </button>
               <button
                 type="submit"
@@ -404,7 +404,7 @@ export default function ProjectEditor({
                 className="btn btn-primary !px-5 !py-2 !text-[0.8125rem]"
               >
                 {saving ? <Spinner className="h-4 w-4 animate-spin" /> : null}
-                {saving ? "Saqlanmoqda…" : isNew ? "Loyiha yaratish" : "O'zgarishlarni saqlash"}
+                {saving ? "Saving…" : isNew ? "Create project" : "Save changes"}
               </button>
             </div>
           </footer>

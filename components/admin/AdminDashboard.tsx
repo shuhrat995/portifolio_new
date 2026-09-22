@@ -92,7 +92,7 @@ export default function AdminDashboard({
 
   function onSaved(project: Project) {
     setProjects((prev) => {
-      const index = prev.findIndex((p) => p.slug === project.slug);
+      const index = prev.findIndex((p) => p.id === project.id);
       if (index === -1) return [project, ...prev];
       const next = [...prev];
       next[index] = project;
