@@ -26,6 +26,38 @@
   },
   {
     "tech": [
+      "Next.js",
+      "TypeScript",
+      "Admin Panel",
+      "Dashboards",
+      "Vercel"
+    ],
+    "topics": [
+      "nextjs",
+      "typescript",
+      "admin-panel",
+      "education"
+    ],
+    "featured": true,
+    "visible": true,
+    "id": "28-maktab_xonqa",
+    "slug": "28-maktab_xonqa",
+    "name": "School Platform — 28-maktab Xonqa",
+    "description": "Modern school web platform for news, internal statistics and graduate data, complete with a protected admin panel for content management.",
+    "longDescription": "A platform built around the everyday needs of a school: announcements, an information hub, statistics dashboards and a granular admin area so staff can publish and manage content without touching code. Currently in production use for the school's public site.",
+    "repoUrl": "https://github.com/shuhrat995/28-maktab_Xonqa",
+    "liveUrl": "https://28-maktab-xonqa.vercel.app",
+    "language": "TypeScript",
+    "category": "Full-Stack",
+    "stars": 1,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-09-11T16:10:59Z",
+    "image": "",
+    "order": 1
+  },
+  {
+    "tech": [
       "React 19",
       "Vite",
       "Capacitor",
@@ -54,38 +86,6 @@
     "forks": 0,
     "createdAt": "",
     "updatedAt": "2026-09-14T16:48:37.323Z",
-    "image": "",
-    "order": 1
-  },
-  {
-    "tech": [
-      "Next.js",
-      "TypeScript",
-      "Admin Panel",
-      "Dashboards",
-      "Vercel"
-    ],
-    "topics": [
-      "nextjs",
-      "typescript",
-      "admin-panel",
-      "education"
-    ],
-    "featured": true,
-    "visible": true,
-    "id": "28-maktab_xonqa",
-    "slug": "28-maktab_xonqa",
-    "name": "School Platform — 28-maktab Xonqa",
-    "description": "Modern school web platform for news, internal statistics and graduate data, complete with a protected admin panel for content management.",
-    "longDescription": "A platform built around the everyday needs of a school: announcements, an information hub, statistics dashboards and a granular admin area so staff can publish and manage content without touching code. Currently in production use for the school's public site.",
-    "repoUrl": "https://github.com/shuhrat995/28-maktab_Xonqa",
-    "liveUrl": "https://28-maktab-xonqa.vercel.app",
-    "language": "TypeScript",
-    "category": "Full-Stack",
-    "stars": 1,
-    "forks": 0,
-    "createdAt": "",
-    "updatedAt": "2026-09-11T16:10:59Z",
     "image": "",
     "order": 2
   },
