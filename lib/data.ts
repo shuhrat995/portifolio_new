@@ -36,15 +36,20 @@ export async function getProjects(includeHidden = false): Promise<Project[]> {
 
 /**
  * Writes a data file. When `GITHUB_TOKEN` and `GITHUB_DATA_REPO` are set the
- * change is committed to GitHub instead of the local disk, which is what makes
- * the admin panel work on read-only hosts like Vercel — the commit triggers a
- * redeploy, so edits become public automatically.
+ * change is committed to GitHub — which is what makes the admin panel work
+ * on read-only hosts like Vercel (the commit triggers a redeploy).
+ * Locally it ALSO writes to `data/*.json`, so both stay in sync.
  */
 async function persist(fileName: string, contents: string): Promise<SaveMode> {
-  const token = process.env.GITHUB_TOKEN;
-  const repo = process.env.GITHUB_DATA_REPO; // "owner/name"
-  const branch = process.env.GITHUB_DATA_BRANCH || "main";
-  const dataPath = process.env.GITHUB_DATA_PATH || "data";
+  const token = process.env.GITHUB_TOKEN?.trim();
+  const repo = process.env.GITHUB_DATA_REPO?.trim(); // "owner/name"
+  const branch = process.env.GITHUB_DATA_BRANCH?.trim() || "main";
+  const dataPath = process.env.GITHUB_DATA_PATH?.trim() || "data";
+
+  async function writeLocal(): Promise<void> {
+    await mkdir(DATA_DIR, { recursive: true });
+    await writeFile(path.join(DATA_DIR, fileName), contents, "utf8");
+  }
 
   if (token && repo) {
     const apiPath = `${dataPath}/${fileName}`;
@@ -78,17 +83,30 @@ async function persist(fileName: string, contents: string): Promise<SaveMode> {
       const detail = await res.text().catch(() => "");
       throw new Error(`GitHub commit failed (${res.status}): ${detail.slice(0, 200)}`);
     }
+
+    // Keep local `data/*.json` in sync too (best-effort — on Vercel the
+    // filesystem is read-only, so a failure here must not break the save).
+    if (!process.env.VERCEL) {
+      try {
+        await writeLocal();
+      } catch (error) {
+        console.error("[admin api] local sync failed", error);
+      }
+    }
     return "github";
   }
 
   if (process.env.VERCEL) {
+    const missing = [
+      !token ? "GITHUB_TOKEN" : null,
+      !repo ? "GITHUB_DATA_REPO" : null,
+    ].filter(Boolean);
     throw new Error(
-      "Content storage is not configured for this deployment. Set GITHUB_TOKEN and GITHUB_DATA_REPO in Vercel Environment Variables."
+      `Content storage is not configured for this deployment (missing: ${missing.join(", ") || "unknown"}). Set GITHUB_TOKEN and GITHUB_DATA_REPO in Vercel → Settings → Environment Variables, then redeploy.`
     );
   }
 
-  await mkdir(DATA_DIR, { recursive: true });
-  await writeFile(path.join(DATA_DIR, fileName), contents, "utf8");
+  await writeLocal();
   return "filesystem";
 }
 

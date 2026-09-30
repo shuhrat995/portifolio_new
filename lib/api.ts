@@ -16,14 +16,23 @@ export function errorResponse(error: unknown) {
     return NextResponse.json({ error: "Not signed in." }, { status: 401 });
   }
   console.error("[admin api]", error);
-  return NextResponse.json(
-    { error: "Something went wrong. Please try again later." },
-    { status: 500 }
-  );
+  // Admin-only route, so exposing the real message is safe and makes
+  // Vercel misconfiguration (missing GITHUB_TOKEN, bad token, etc.)
+  // visible in the dashboard instead of a generic 500.
+  const message =
+    error instanceof Error && error.message
+      ? error.message
+      : "Something went wrong. Please try again later.";
+  return NextResponse.json({ error: message }, { status: 500 });
 }
 
 /** Makes the public pages pick up freshly written data. */
 export function refreshPublicPages() {
-  revalidatePath("/");
-  revalidatePath("/qw/dashboard");
+  try {
+    revalidatePath("/");
+    revalidatePath("/qw/dashboard");
+  } catch (error) {
+    // A revalidate failure must never turn a successful save into a 500.
+    console.error("[admin api] revalidate failed", error);
+  }
 }
