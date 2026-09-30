@@ -1,10 +1,35 @@
 [
   {
+    "id": "interyu-uz-2",
+    "slug": "interyu-uz-2",
+    "name": "Interyu.uz",
+    "description": "Bu suxbatgacha bo'lgan savollarga tayorlanish",
+    "longDescription": "Biz anq maqsad bor sizni suxbatga tayorgarligingizni tekshirish va sizda past chiqan natija bilib sizni tayorgarligingizni oshirish savollar ga",
+    "repoUrl": "https://github.com/shuhrat995/interyu",
+    "liveUrl": "https://interyuuz.vercel.app/",
+    "language": "TypeScript",
+    "category": "Frontend",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "topics": [],
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2026-09-30T15:47:21.516Z",
+    "updatedAt": "2026-09-30T15:47:21.516Z",
+    "image": "",
+    "featured": true,
+    "visible": true,
+    "order": 0
+  },
+  {
     "id": "interyu-uz",
     "slug": "interyu-uz",
     "name": "Interyu.uz",
-    "description": "AI-powered mock interview platform — 12 adaptive questions for front-end and back-end tracks, with AI scoring and a level report from junior to senior.",
-    "longDescription": "Interyu.uz is an AI interview preparation platform in Uzbek. Pick a track (front-end or back-end) and answer 12 mixed quiz and written questions under per-question time limits — no sign-up needed. Difficulty adapts to your answers: two correct in a row raises the level, a mistake lowers it. Written answers are graded against a rubric, and at the end you get an open report — level (junior → senior), total score, strengths, weaknesses and exactly which topics to focus on next. Built with Next.js, TypeScript and Tailwind CSS.",
+    "description": "sldfjvjsdfvpi",
+    "longDescription": "adfljgvhn dlfjhv hjldf",
     "repoUrl": "https://github.com/shuhrat995/interyu",
     "liveUrl": "https://interyuuz.vercel.app/",
     "language": "TypeScript",
@@ -18,11 +43,11 @@
     "stars": 0,
     "forks": 0,
     "createdAt": "2026-09-22T18:27:47.946Z",
-    "updatedAt": "2026-09-30T15:29:14.311Z",
+    "updatedAt": "2026-09-30T13:45:44.967Z",
     "image": "",
     "featured": true,
     "visible": true,
-    "order": 0
+    "order": 1
   },
   {
     "tech": [
@@ -55,7 +80,7 @@
     "createdAt": "",
     "updatedAt": "2026-09-14T16:48:37.323Z",
     "image": "",
-    "order": 1
+    "order": 2
   },
   {
     "tech": [
@@ -88,7 +113,7 @@
     "createdAt": "",
     "updatedAt": "2026-09-14T16:46:06.660Z",
     "image": "",
-    "order": 2
+    "order": 3
   },
   {
     "tech": [
@@ -120,7 +145,7 @@
     "createdAt": "",
     "updatedAt": "2026-09-12T15:08:50Z",
     "image": "",
-    "order": 3
+    "order": 4
   },
   {
     "tech": [
@@ -152,7 +177,7 @@
     "createdAt": "",
     "updatedAt": "2026-09-11T16:10:59Z",
     "image": "",
-    "order": 4
+    "order": 5
   },
   {
     "tech": [
@@ -185,7 +210,7 @@
     "createdAt": "",
     "updatedAt": "2026-08-26T21:39:37Z",
     "image": "",
-    "order": 5
+    "order": 6
   },
   {
     "tech": [
@@ -216,7 +241,7 @@
     "createdAt": "",
     "updatedAt": "2026-06-05T13:02:26Z",
     "image": "",
-    "order": 6
+    "order": 7
   },
   {
     "tech": [
@@ -247,7 +272,7 @@
     "createdAt": "",
     "updatedAt": "2026-05-27T15:00:13Z",
     "image": "",
-    "order": 7
+    "order": 8
   },
   {
     "tech": [
@@ -277,7 +302,7 @@
     "createdAt": "",
     "updatedAt": "2026-08-31T15:31:56Z",
     "image": "",
-    "order": 8
+    "order": 9
   },
   {
     "tech": [
@@ -306,7 +331,7 @@
     "createdAt": "",
     "updatedAt": "2026-04-05T14:06:01Z",
     "image": "",
-    "order": 9
+    "order": 10
   },
   {
     "tech": [
@@ -338,7 +363,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-31T16:27:00Z",
     "image": "",
-    "order": 10
+    "order": 11
   },
   {
     "tech": [
@@ -368,7 +393,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-25T12:43:30Z",
     "image": "",
-    "order": 11
+    "order": 12
   },
   {
     "tech": [
@@ -396,7 +421,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-23T07:36:04Z",
     "image": "",
-    "order": 12
+    "order": 13
   },
   {
     "tech": [
@@ -425,7 +450,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T05:58:13Z",
     "image": "",
-    "order": 13
+    "order": 14
   },
   {
     "tech": [
@@ -453,7 +478,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T05:29:33Z",
     "image": "",
-    "order": 14
+    "order": 15
   },
   {
     "tech": [
@@ -482,7 +507,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T04:15:46Z",
     "image": "",
-    "order": 15
+    "order": 16
   },
   {
     "tech": [
@@ -511,6 +536,6 @@
     "createdAt": "",
     "updatedAt": "2025-10-24T16:40:00Z",
     "image": "",
-    "order": 16
+    "order": 17
   }
 ]
