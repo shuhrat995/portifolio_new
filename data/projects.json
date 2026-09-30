@@ -18,7 +18,7 @@
     "stars": 0,
     "forks": 0,
     "createdAt": "2026-09-22T18:27:47.946Z",
-    "updatedAt": "2026-09-30T15:47:48.028Z",
+    "updatedAt": "2026-09-30T13:45:44.967Z",
     "image": "",
     "featured": true,
     "visible": true,
@@ -93,38 +93,6 @@
   {
     "tech": [
       "Next.js",
-      "Express",
-      "TypeScript",
-      "REST API",
-      "Vercel"
-    ],
-    "topics": [
-      "nextjs",
-      "express",
-      "anime",
-      "fullstack"
-    ],
-    "featured": true,
-    "visible": true,
-    "id": "anime",
-    "slug": "anime",
-    "name": "Anime Platform",
-    "description": "Full-stack anime platform with a Next.js frontend and a dedicated Express API — browse, search and discover titles in a fast, media-rich interface.",
-    "longDescription": "A complete anime discovery product rather than a UI exercise: the Next.js client renders a responsive, image-heavy catalogue while a separate Express backend owns the data layer. Built with care for loading states, empty states and a layout that holds together on small screens.",
-    "repoUrl": "https://github.com/shuhrat995/anime",
-    "liveUrl": "",
-    "language": "TypeScript",
-    "category": "Full-Stack",
-    "stars": 0,
-    "forks": 0,
-    "createdAt": "",
-    "updatedAt": "2026-09-12T15:08:50Z",
-    "image": "",
-    "order": 3
-  },
-  {
-    "tech": [
-      "Next.js",
       "TypeScript",
       "Admin Panel",
       "Dashboards",
@@ -151,6 +119,38 @@
     "forks": 0,
     "createdAt": "",
     "updatedAt": "2026-09-11T16:10:59Z",
+    "image": "",
+    "order": 3
+  },
+  {
+    "tech": [
+      "Next.js",
+      "Express",
+      "TypeScript",
+      "REST API",
+      "Vercel"
+    ],
+    "topics": [
+      "nextjs",
+      "express",
+      "anime",
+      "fullstack"
+    ],
+    "featured": true,
+    "visible": true,
+    "id": "anime",
+    "slug": "anime",
+    "name": "Anime Platform",
+    "description": "Full-stack anime platform with a Next.js frontend and a dedicated Express API — browse, search and discover titles in a fast, media-rich interface.",
+    "longDescription": "A complete anime discovery product rather than a UI exercise: the Next.js client renders a responsive, image-heavy catalogue while a separate Express backend owns the data layer. Built with care for loading states, empty states and a layout that holds together on small screens.",
+    "repoUrl": "https://github.com/shuhrat995/anime",
+    "liveUrl": "",
+    "language": "TypeScript",
+    "category": "Full-Stack",
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-09-12T15:08:50Z",
     "image": "",
     "order": 4
   },
