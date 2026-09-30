@@ -30,7 +30,8 @@ export async function POST(request: Request) {
   let password = "";
   try {
     const body = (await request.json()) as { password?: unknown };
-    password = typeof body?.password === "string" ? body.password : "";
+    // Trim so a stray space from copy-paste does not lock out the admin.
+    password = typeof body?.password === "string" ? body.password.trim() : "";
   } catch {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
