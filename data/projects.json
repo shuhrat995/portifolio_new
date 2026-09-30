@@ -1,37 +1,5 @@
 [
   {
-    "tech": [
-      "Next.js",
-      "TypeScript",
-      "Admin Panel",
-      "Dashboards",
-      "Vercel"
-    ],
-    "topics": [
-      "nextjs",
-      "typescript",
-      "admin-panel",
-      "education"
-    ],
-    "featured": true,
-    "visible": true,
-    "id": "28-maktab_xonqa",
-    "slug": "28-maktab_xonqa",
-    "name": "School Platform — 28-maktab Xonqa",
-    "description": "Modern school web platform for news, internal statistics and graduate data, complete with a protected admin panel for content management.",
-    "longDescription": "A platform built around the everyday needs of a school: announcements, an information hub, statistics dashboards and a granular admin area so staff can publish and manage content without touching code. Currently in production use for the school's public site.",
-    "repoUrl": "https://github.com/shuhrat995/28-maktab_Xonqa",
-    "liveUrl": "https://28-maktab-xonqa.vercel.app",
-    "language": "TypeScript",
-    "category": "Full-Stack",
-    "stars": 1,
-    "forks": 0,
-    "createdAt": "",
-    "updatedAt": "2026-09-11T16:10:59Z",
-    "image": "",
-    "order": 0
-  },
-  {
     "id": "interyu-uz",
     "slug": "interyu-uz",
     "name": "Interyu.uz",
@@ -54,9 +22,18 @@
     "image": "",
     "featured": true,
     "visible": true,
-    "order": 1
+    "order": 0
   },
   {
+    "id": "lugat",
+    "slug": "lugat",
+    "name": "LingoUz — Vocabulary App",
+    "description": "LingoUz — a 14,000+ word vocabulary app built with React and shipped to Android through Capacitor.",
+    "longDescription": "A dictionary and vocabulary trainer with a 14,000+ word dataset (roadmap: 80,000). Built with React 19, React Router and Vite, then wrapped with Capacitor so the exact same codebase runs as a native Android app as well as on the web.",
+    "repoUrl": "https://github.com/shuhrat995/Lugat",
+    "liveUrl": "https://shuhrat995.github.io/Lugat/",
+    "language": "JavaScript",
+    "category": "Mobile",
     "tech": [
       "React 19",
       "Vite",
@@ -71,23 +48,14 @@
       "android",
       "dictionary"
     ],
-    "featured": true,
-    "visible": true,
-    "id": "lugat",
-    "slug": "lugat",
-    "name": "LingoUz — Vocabulary App",
-    "description": "LingoUz — a 14,000+ word vocabulary app built with React and shipped to Android through Capacitor.",
-    "longDescription": "A dictionary and vocabulary trainer with a 14,000+ word dataset (roadmap: 80,000). Built with React 19, React Router and Vite, then wrapped with Capacitor so the exact same codebase runs as a native Android app as well as on the web.",
-    "repoUrl": "https://github.com/shuhrat995/Lugat",
-    "liveUrl": "https://shuhrat995.github.io/Lugat/",
-    "language": "JavaScript",
-    "category": "Mobile",
     "stars": 2,
     "forks": 0,
     "createdAt": "",
-    "updatedAt": "2026-09-14T16:48:37.323Z",
+    "updatedAt": "2026-09-30T15:56:46.736Z",
     "image": "",
-    "order": 2
+    "featured": true,
+    "visible": true,
+    "order": 1
   },
   {
     "tech": [
@@ -120,7 +88,7 @@
     "createdAt": "",
     "updatedAt": "2026-09-14T16:46:06.660Z",
     "image": "",
-    "order": 3
+    "order": 2
   },
   {
     "tech": [
@@ -151,6 +119,38 @@
     "forks": 0,
     "createdAt": "",
     "updatedAt": "2026-09-12T15:08:50Z",
+    "image": "",
+    "order": 3
+  },
+  {
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Admin Panel",
+      "Dashboards",
+      "Vercel"
+    ],
+    "topics": [
+      "nextjs",
+      "typescript",
+      "admin-panel",
+      "education"
+    ],
+    "featured": true,
+    "visible": true,
+    "id": "28-maktab_xonqa",
+    "slug": "28-maktab_xonqa",
+    "name": "School Platform — 28-maktab Xonqa",
+    "description": "Modern school web platform for news, internal statistics and graduate data, complete with a protected admin panel for content management.",
+    "longDescription": "A platform built around the everyday needs of a school: announcements, an information hub, statistics dashboards and a granular admin area so staff can publish and manage content without touching code. Currently in production use for the school's public site.",
+    "repoUrl": "https://github.com/shuhrat995/28-maktab_Xonqa",
+    "liveUrl": "https://28-maktab-xonqa.vercel.app",
+    "language": "TypeScript",
+    "category": "Full-Stack",
+    "stars": 1,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-09-11T16:10:59Z",
     "image": "",
     "order": 4
   },
