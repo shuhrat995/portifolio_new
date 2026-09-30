@@ -1,30 +1,5 @@
 [
   {
-    "id": "interyu-uz",
-    "slug": "interyu-uz",
-    "name": "Interyu.uz",
-    "description": "sldfjvjsdfvpi",
-    "longDescription": "adfljgvhn dlfjhv hjldf",
-    "repoUrl": "https://github.com/shuhrat995/interyu",
-    "liveUrl": "https://interyuuz.vercel.app/",
-    "language": "TypeScript",
-    "category": "Frontend",
-    "tech": [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS"
-    ],
-    "topics": [],
-    "stars": 0,
-    "forks": 0,
-    "createdAt": "2026-09-22T18:27:47.946Z",
-    "updatedAt": "2026-09-30T13:45:44.967Z",
-    "image": "",
-    "featured": true,
-    "visible": true,
-    "order": 0
-  },
-  {
     "tech": [
       "Next.js",
       "TypeScript",
@@ -54,6 +29,31 @@
     "createdAt": "",
     "updatedAt": "2026-09-11T16:10:59Z",
     "image": "",
+    "order": 0
+  },
+  {
+    "id": "interyu-uz",
+    "slug": "interyu-uz",
+    "name": "Interyu.uz",
+    "description": "sldfjvjsdfvpi",
+    "longDescription": "adfljgvhn dlfjhv hjldf",
+    "repoUrl": "https://github.com/shuhrat995/interyu",
+    "liveUrl": "https://interyuuz.vercel.app/",
+    "language": "TypeScript",
+    "category": "Frontend",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "topics": [],
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2026-09-22T18:27:47.946Z",
+    "updatedAt": "2026-09-30T13:45:44.967Z",
+    "image": "",
+    "featured": true,
+    "visible": true,
     "order": 1
   },
   {
