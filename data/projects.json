@@ -51,22 +51,13 @@
     "stars": 2,
     "forks": 0,
     "createdAt": "",
-    "updatedAt": "2026-10-22T17:47:08.308Z",
+    "updatedAt": "2026-10-22T18:14:54.326Z",
     "image": "",
     "featured": true,
     "visible": true,
     "order": 1
   },
   {
-    "id": "task-management",
-    "slug": "task-management",
-    "name": "TaskFlow — Kanban & Crypto",
-    "description": "Full-stack Kanban task manager on the Next.js App Router, paired with a live crypto market view and a typed internal API layer.",
-    "longDescription": "Two products in one codebase: a Kanban board with draggable columns and a crypto market panel fed by a public API. Next.js route handlers form a typed internal API, and optimistic UI updates keep the board feeling instant even on a slow connection.",
-    "repoUrl": "https://github.com/shuhrat995/TaskFlowt",
-    "liveUrl": "https://task-menejer.netlify.app/",
-    "language": "TypeScript",
-    "category": "Full-Stack",
     "tech": [
       "Next.js",
       "App Router",
@@ -81,13 +72,22 @@
       "crypto",
       "typescript"
     ],
+    "featured": true,
+    "visible": true,
+    "id": "task-management",
+    "slug": "task-management",
+    "name": "TaskFlow — Kanban & Crypto",
+    "description": "Full-stack Kanban task manager on the Next.js App Router, paired with a live crypto market view and a typed internal API layer.",
+    "longDescription": "Two products in one codebase: a Kanban board with draggable columns and a crypto market panel fed by a public API. Next.js route handlers form a typed internal API, and optimistic UI updates keep the board feeling instant even on a slow connection.",
+    "repoUrl": "https://github.com/shuhrat995/task-management",
+    "liveUrl": "https://task-management-tau-rust.vercel.app",
+    "language": "TypeScript",
+    "category": "Full-Stack",
     "stars": 1,
     "forks": 0,
     "createdAt": "",
-    "updatedAt": "2026-10-22T17:49:01.198Z",
+    "updatedAt": "2026-09-14T16:46:06.660Z",
     "image": "",
-    "featured": true,
-    "visible": true,
     "order": 2
   },
   {
@@ -251,6 +251,36 @@
   },
   {
     "tech": [
+      "JavaScript",
+      "HTML5 Canvas",
+      "CSS3",
+      "Game Loop"
+    ],
+    "topics": [
+      "javascript",
+      "canvas",
+      "game"
+    ],
+    "featured": false,
+    "visible": true,
+    "id": "2d_o-yin_ish_uchun",
+    "slug": "2d_o-yin_ish_uchun",
+    "name": "Arkanoid — NES Edition",
+    "description": "Arkanoid clone rendered on HTML5 Canvas — brick physics, paddle control and NES-inspired pixel visuals in pure vanilla JavaScript.",
+    "longDescription": "A browser game written from scratch with no engine and no dependencies: a requestAnimationFrame loop drives ball physics and collision detection on HTML5 Canvas, with a retro NES palette applied throughout.",
+    "repoUrl": "https://github.com/shuhrat995/2D_O-yin_ish_uchun",
+    "liveUrl": "https://2-d-oyin-ish-uchun.vercel.app",
+    "language": "JavaScript",
+    "category": "Game",
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "",
+    "updatedAt": "2026-08-31T15:31:56Z",
+    "image": "",
+    "order": 8
+  },
+  {
+    "tech": [
       "React",
       "Vite",
       "ESLint",
@@ -276,7 +306,7 @@
     "createdAt": "",
     "updatedAt": "2026-04-05T14:06:01Z",
     "image": "",
-    "order": 8
+    "order": 9
   },
   {
     "tech": [
@@ -308,7 +338,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-31T16:27:00Z",
     "image": "",
-    "order": 9
+    "order": 10
   },
   {
     "tech": [
@@ -338,7 +368,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-25T12:43:30Z",
     "image": "",
-    "order": 10
+    "order": 11
   },
   {
     "tech": [
@@ -366,7 +396,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-23T07:36:04Z",
     "image": "",
-    "order": 11
+    "order": 12
   },
   {
     "tech": [
@@ -395,7 +425,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T05:58:13Z",
     "image": "",
-    "order": 12
+    "order": 13
   },
   {
     "tech": [
@@ -423,7 +453,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T05:29:33Z",
     "image": "",
-    "order": 13
+    "order": 14
   },
   {
     "tech": [
@@ -452,7 +482,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T04:15:46Z",
     "image": "",
-    "order": 14
+    "order": 15
   },
   {
     "tech": [
@@ -481,6 +511,6 @@
     "createdAt": "",
     "updatedAt": "2025-10-24T16:40:00Z",
     "image": "",
-    "order": 15
+    "order": 16
   }
 ]
