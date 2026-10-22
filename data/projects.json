@@ -58,6 +58,15 @@
     "order": 1
   },
   {
+    "id": "task-management",
+    "slug": "task-management",
+    "name": "TaskFlow — Kanban & Crypto",
+    "description": "Full-stack Kanban task manager on the Next.js App Router, paired with a live crypto market view and a typed internal API layer.",
+    "longDescription": "Two products in one codebase: a Kanban board with draggable columns and a crypto market panel fed by a public API. Next.js route handlers form a typed internal API, and optimistic UI updates keep the board feeling instant even on a slow connection.",
+    "repoUrl": "https://github.com/shuhrat995/TaskFlowt",
+    "liveUrl": "https://task-menejer.netlify.app/",
+    "language": "TypeScript",
+    "category": "Full-Stack",
     "tech": [
       "Next.js",
       "App Router",
@@ -72,22 +81,13 @@
       "crypto",
       "typescript"
     ],
-    "featured": true,
-    "visible": true,
-    "id": "task-management",
-    "slug": "task-management",
-    "name": "TaskFlow — Kanban & Crypto",
-    "description": "Full-stack Kanban task manager on the Next.js App Router, paired with a live crypto market view and a typed internal API layer.",
-    "longDescription": "Two products in one codebase: a Kanban board with draggable columns and a crypto market panel fed by a public API. Next.js route handlers form a typed internal API, and optimistic UI updates keep the board feeling instant even on a slow connection.",
-    "repoUrl": "https://github.com/shuhrat995/task-management",
-    "liveUrl": "https://task-management-tau-rust.vercel.app",
-    "language": "TypeScript",
-    "category": "Full-Stack",
     "stars": 1,
     "forks": 0,
     "createdAt": "",
-    "updatedAt": "2026-09-14T16:46:06.660Z",
+    "updatedAt": "2026-10-22T17:49:01.198Z",
     "image": "",
+    "featured": true,
+    "visible": true,
     "order": 2
   },
   {
