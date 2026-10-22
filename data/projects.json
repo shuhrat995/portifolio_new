@@ -251,36 +251,6 @@
   },
   {
     "tech": [
-      "JavaScript",
-      "HTML5 Canvas",
-      "CSS3",
-      "Game Loop"
-    ],
-    "topics": [
-      "javascript",
-      "canvas",
-      "game"
-    ],
-    "featured": false,
-    "visible": true,
-    "id": "2d_o-yin_ish_uchun",
-    "slug": "2d_o-yin_ish_uchun",
-    "name": "Arkanoid — NES Edition",
-    "description": "Arkanoid clone rendered on HTML5 Canvas — brick physics, paddle control and NES-inspired pixel visuals in pure vanilla JavaScript.",
-    "longDescription": "A browser game written from scratch with no engine and no dependencies: a requestAnimationFrame loop drives ball physics and collision detection on HTML5 Canvas, with a retro NES palette applied throughout.",
-    "repoUrl": "https://github.com/shuhrat995/2D_O-yin_ish_uchun",
-    "liveUrl": "https://2-d-oyin-ish-uchun.vercel.app",
-    "language": "JavaScript",
-    "category": "Game",
-    "stars": 0,
-    "forks": 0,
-    "createdAt": "",
-    "updatedAt": "2026-08-31T15:31:56Z",
-    "image": "",
-    "order": 8
-  },
-  {
-    "tech": [
       "React",
       "Vite",
       "ESLint",
@@ -306,7 +276,7 @@
     "createdAt": "",
     "updatedAt": "2026-04-05T14:06:01Z",
     "image": "",
-    "order": 9
+    "order": 8
   },
   {
     "tech": [
@@ -338,7 +308,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-31T16:27:00Z",
     "image": "",
-    "order": 10
+    "order": 9
   },
   {
     "tech": [
@@ -368,7 +338,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-25T12:43:30Z",
     "image": "",
-    "order": 11
+    "order": 10
   },
   {
     "tech": [
@@ -396,7 +366,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-23T07:36:04Z",
     "image": "",
-    "order": 12
+    "order": 11
   },
   {
     "tech": [
@@ -425,7 +395,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T05:58:13Z",
     "image": "",
-    "order": 13
+    "order": 12
   },
   {
     "tech": [
@@ -453,7 +423,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T05:29:33Z",
     "image": "",
-    "order": 14
+    "order": 13
   },
   {
     "tech": [
@@ -482,7 +452,7 @@
     "createdAt": "",
     "updatedAt": "2026-03-21T04:15:46Z",
     "image": "",
-    "order": 15
+    "order": 14
   },
   {
     "tech": [
@@ -511,6 +481,6 @@
     "createdAt": "",
     "updatedAt": "2025-10-24T16:40:00Z",
     "image": "",
-    "order": 16
+    "order": 15
   }
 ]
