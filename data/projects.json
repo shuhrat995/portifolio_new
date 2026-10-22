@@ -27,7 +27,7 @@
   {
     "id": "lugat",
     "slug": "lugat",
-    "name": "Lexora — Vocabulary App",
+    "name": "LingoUz — Vocabulary App",
     "description": "LingoUz — a 14,000+ word vocabulary app built with React and shipped to Android through Capacitor.",
     "longDescription": "A dictionary and vocabulary trainer with a 14,000+ word dataset (roadmap: 80,000). Built with React 19, React Router and Vite, then wrapped with Capacitor so the exact same codebase runs as a native Android app as well as on the web.",
     "repoUrl": "https://github.com/shuhrat995/Lugat",
@@ -51,7 +51,7 @@
     "stars": 2,
     "forks": 0,
     "createdAt": "",
-    "updatedAt": "2026-09-30T16:02:11.268Z",
+    "updatedAt": "2026-10-22T12:52:42.171Z",
     "image": "",
     "featured": true,
     "visible": true,
