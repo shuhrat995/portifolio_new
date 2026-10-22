@@ -4,6 +4,31 @@ import type { Profile, Project } from "@/lib/types";
 type ProfileCopy = Pick<Profile, "headline" | "roles" | "bio" | "location" | "company" | "quote" | "quoteTranslation" | "interests" | "experience" | "education">;
 type ProjectCopy = Pick<Project, "name" | "description" | "longDescription" | "category">;
 
+/**
+ * Fields that have built-in translations. When one of them is edited in the
+ * admin panel the edit is recorded on the record (`editedFields`) and the
+ * translation is skipped, so the admin is always the source of truth.
+ */
+export const LOCALIZABLE_PROFILE_FIELDS = [
+  "headline",
+  "roles",
+  "bio",
+  "location",
+  "company",
+  "quote",
+  "quoteTranslation",
+  "interests",
+  "experience",
+  "education",
+] as const satisfies readonly (keyof Profile)[];
+
+export const LOCALIZABLE_PROJECT_FIELDS = [
+  "name",
+  "description",
+  "longDescription",
+  "category",
+] as const satisfies readonly (keyof Project)[];
+
 const profileCopy: Partial<Record<Locale, Partial<ProfileCopy>>> = {
   uz: {
     headline: "Tezkor va zamonaviy web-ilovalar yaratuvchi frontend dasturchi",
@@ -70,8 +95,25 @@ const projectCopy: Record<string, Partial<Record<Locale, ProjectCopy>>> = {
   "javascript-qalqulyatr": { uz: { name: "JavaScript kalkulyator", description: "JavaScript yordamida yaratilgan qulay kalkulyator ilovasi.", category: "Mini App" }, ru: { name: "JavaScript-калькулятор", description: "Удобное приложение-калькулятор, созданное на JavaScript.", category: "Mini App" } },
 };
 
+/** Applies translated copy for every field the admin has not edited. */
+function applyCopy<T extends object>(
+  base: T,
+  copy: Partial<T> | undefined,
+  editedFields: readonly string[] | undefined
+): T {
+  if (!copy) return base;
+  const edited = new Set(editedFields ?? []);
+  const localized = { ...base };
+  for (const [key, value] of Object.entries(copy)) {
+    if (!edited.has(key)) {
+      (localized as Record<string, unknown>)[key] = value;
+    }
+  }
+  return localized;
+}
+
 export function localizeProfile(profile: Profile, locale: Locale): Profile {
-  const localized = { ...profile, ...(profileCopy[locale] ?? {}) };
+  const localized = applyCopy<Profile>(profile, profileCopy[locale], profile.editedFields);
   const categoryNames: Record<string, string> = locale === "uz"
     ? { Core: "Asosiy", Framework: "Framework", Styling: "Stilizatsiya", Tooling: "Vositalar", Tools: "Asboblar" }
     : locale === "ru"
@@ -84,5 +126,7 @@ export function localizeProfile(profile: Profile, locale: Locale): Profile {
 }
 
 export function localizeProjects(projects: Project[], locale: Locale): Project[] {
-  return projects.map((project) => ({ ...project, ...(projectCopy[project.slug]?.[locale] ?? {}) }));
+  return projects.map((project) =>
+    applyCopy<Project>(project, projectCopy[project.slug]?.[locale], project.editedFields)
+  );
 }

@@ -29,7 +29,11 @@ export function errorResponse(error: unknown) {
 /** Makes the public pages pick up freshly written data. */
 export function refreshPublicPages() {
   try {
-    revalidatePath("/");
+    // The public portfolio lives under `/{locale}` (uz, en, ru), so
+    // revalidating only `/` left the statically generated locale pages
+    // serving stale data. Purging the root layout covers all of them.
+    revalidatePath("/", "layout");
+    revalidatePath("/[locale]", "page");
     revalidatePath("/qw/dashboard");
   } catch (error) {
     // A revalidate failure must never turn a successful save into a 500.

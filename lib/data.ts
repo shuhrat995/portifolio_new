@@ -1,5 +1,6 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
+import { LOCALIZABLE_PROFILE_FIELDS, LOCALIZABLE_PROJECT_FIELDS } from "./content";
 import type { Profile, Project, SaveMode } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data");
@@ -110,13 +111,74 @@ async function persist(fileName: string, contents: string): Promise<SaveMode> {
   return "filesystem";
 }
 
+function sameValue(a: unknown, b: unknown): boolean {
+  return JSON.stringify(a) === JSON.stringify(b);
+}
+
+/**
+ * Records which localizable fields the admin changed, so the built-in
+ * translations in `lib/content.ts` stop overriding them on the public site.
+ */
+function collectEditedFields(
+  next: object,
+  previous: object | undefined,
+  fields: readonly string[],
+  existing?: readonly string[]
+): string[] {
+  const edited = new Set(existing ?? []);
+
+  for (const field of fields) {
+    const value = (next as Record<string, unknown>)[field];
+    const before = (previous as Record<string, unknown> | undefined)?.[field];
+
+    // A brand-new record (or an empty one) has no baseline to compare
+    // against — treat all of its content as admin-authored.
+    if (!previous || before === undefined) {
+      if (value !== undefined) edited.add(field);
+      continue;
+    }
+
+    if (!sameValue(value, before)) edited.add(field);
+  }
+
+  return [...edited];
+}
+
 export async function saveProjects(projects: Project[]): Promise<SaveMode> {
-  const ordered = projects.map((p, i) => ({ ...p, order: i }));
+  const current = await readJson<Project[]>(PROJECTS_FILE, []);
+  const bySlug = new Map(current.map((project) => [project.slug, project]));
+
+  const ordered = projects.map((project, index) => {
+    const previous = bySlug.get(project.slug);
+    const editedFields = collectEditedFields(
+      project,
+      previous,
+      LOCALIZABLE_PROJECT_FIELDS,
+      project.editedFields ?? previous?.editedFields
+    );
+    const next = { ...project, order: index };
+    if (editedFields.length) next.editedFields = editedFields;
+    else delete next.editedFields;
+    return next;
+  });
+
   return persist("projects.json", JSON.stringify(ordered, null, 2) + "\n");
 }
 
 export async function saveProfile(profile: Profile): Promise<SaveMode> {
-  return persist("profile.json", JSON.stringify(profile, null, 2) + "\n");
+  const current = await readJson<Profile | null>(PROFILE_FILE, null);
+  const editedFields = collectEditedFields(
+    profile,
+    current ?? undefined,
+    LOCALIZABLE_PROFILE_FIELDS,
+    profile.editedFields ?? current?.editedFields
+  );
+
+  const next = { ...profile };
+  if (editedFields.length) next.editedFields = editedFields;
+  else delete next.editedFields;
+
+  return persist("profile.json", JSON.stringify(next, null, 2) + "\n");
 }
 
 /* ------------------------------------------------------------------ */

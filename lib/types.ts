@@ -21,6 +21,12 @@ export type Project = {
   /** Unchecked to hide a project from the public site without deleting it. */
   visible: boolean;
   order: number;
+  /**
+   * Fields edited through the admin panel. Localized copy from
+   * `lib/content.ts` only fills the fields that are NOT listed here, so
+   * admin edits always win over the built-in translations.
+   */
+  editedFields?: string[];
 };
 
 export type Skill = {
@@ -77,6 +83,12 @@ export type Profile = {
   experience: ExperienceItem[];
   education: EducationItem[];
   updatedAt: string;
+  /**
+   * Fields edited through the admin panel. Localized copy from
+   * `lib/content.ts` only fills the fields that are NOT listed here, so
+   * admin edits always win over the built-in translations.
+   */
+  editedFields?: string[];
 };
 
 /** Where the admin panel persisted a change. */
